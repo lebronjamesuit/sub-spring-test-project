@@ -1,5 +1,5 @@
-# sub-spring-test-project
-Break the big project into many smaller apps to try with different test approaches.
+
+# Break the big project into many smaller apps to try with different test approaches.
 
 <img width="738" alt="Screenshot 2023-09-30 at 11 23 07" src="https://github.com/lebronjamesuit/sub-spring-test-project/assets/11584601/b481273f-d9fe-4c0f-b62f-5f5115bf5878">
 
@@ -23,3 +23,7 @@ In this test, the full Spring application context is started but without the ser
   - @WebMvcTest
 
 The test assertion is the same as in the previous case. However, in this test, Spring Boot instantiates only the web layer rather than the whole context. In an application with multiple controllers, you can even ask for only one to be instantiated by using, for example, @WebMvcTest(YourClass.class).
+
+# Next challenge:
+
+Implement "Test containers" which has Unit tests with real dependencies
